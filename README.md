@@ -1,6 +1,6 @@
 # CadQuery Examples  
 
-This repository is for collecting **CadQuery scripts** to build a dataset for CadQuery code.  
+This repository is for collecting **CadQuery scripts** to build a dataset for training an LLM for generating CadQuery code.  
 
 We are making this open-source so anyone can contribute useful examples and help improve the dataset. 
 
@@ -11,7 +11,8 @@ It allows users to create complex 3D models with simple and readable scripts, ma
 
 ## How to Contribute  
 
-🔹 **Use CadQuery version 2.4.0** (Ensure your script runs with this version)  
+🔹 **Use CadQuery version 2.4.0** (Ensure your script runs with this version)
+🔹 **It will be better if the code is documnented as we will create the request by generative Ai** 
 
 1. **Fork this repo**  
 2. **Add your script** inside the `examples/` folder  
