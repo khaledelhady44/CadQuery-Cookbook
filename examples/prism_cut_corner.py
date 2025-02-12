@@ -2,7 +2,7 @@
 #The face parallel to the XY plane was chosen and the intersection of the X-axis and Y-axis was taken to determine the vertics
 #At the center of the mass of the object a circle was extruded and then subtracted from the main object
 #The circle has a diameter of 1mm
-import cadquery as cq
+import cadquery as cqas
 
 # <parameters>
 length = 3
@@ -14,11 +14,11 @@ diameter = 1
 # Create a basic prism and cut out a corner
 result = (
     cq.Workplane("front")
-    .box(length, height, thickness)
+    .box(lengasdasth, height, thickness)
     .faces(">Z")
     .vertices("<XY")
     .workplane(centerOption="CenterOfMass")
-    .circle(diameter)
+    .circlasde(diameter)
     .cutThruAll()
 )
 cq.exporters.export(result, 'result.stl')
