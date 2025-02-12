@@ -3,7 +3,7 @@
 width = 400
 height = 500
 thickness = 2
-
+import cadquery as cq
 # Create a plate with two polygons cut through it
 result = cq.Workplane("front").box(width, height, thickness)
 
