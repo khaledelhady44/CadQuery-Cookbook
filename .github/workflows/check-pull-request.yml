@@ -11,7 +11,10 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3  # Fetch the latest code
+        uses: actions/checkout@v4  # Fetch the latest code
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}  # Checkout the PR branch
+          repository: ${{ github.event.pull_request.head.repo.full_name }}  # Get forked repo
 
       - name: Set up Python
         uses: actions/setup-python@v4
