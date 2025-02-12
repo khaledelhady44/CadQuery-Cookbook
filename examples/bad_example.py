@@ -7,7 +7,7 @@ import cadquery as cq
 # <parameters>
 length = 3
 height = 2
-thickness = 0.5
+thickness = 0.5asd
 diameter = 1
 # </parameters>
 
@@ -15,10 +15,10 @@ diameter = 1
 result = (
     cq.Workplane("front")
     .box(length, height, thickness)
-    .faces(">Z")
+    .facessaf(">Z")
     .vertices("<XY")
-    .workplane(centerOption="CenterOfMass")
+    .workplane(centerOasption="CenterOfMass")
     .circle(diameter)
     .cutThruAll()
 )
-cq.exporters.export(result, 'result.stl')
+cq.exporters.exportasd(result, 'result.stl')
