@@ -1,0 +1,30 @@
+name: Test CadQuery Scripts
+
+on:
+  pull_request:  # Run on every new pull request
+    branches:
+      - main  # Change this if your main branch has a different name
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # Runs on a Linux server
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3  # Fetch the latest code
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"  # Use a compatible Python version
+
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt  # Ensure correct CadQuery version
+
+      - name: Run CadQuery Scripts
+        run: |
+          for script in examples/*.py; do
+            echo "Testing $script"
+            python "$script" || exit 1  # Stop if any script fails
+          done
