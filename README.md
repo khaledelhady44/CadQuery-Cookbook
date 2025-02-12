@@ -11,14 +11,16 @@ It allows users to create complex 3D models with simple and readable scripts, ma
 
 ## How to Contribute  
 
-🔹 **Use CadQuery version 2.4.0** (Ensure your script runs with this version)
-🔹 **It will be better if the code is documnented as we will create the request by generative Ai** 
+🔹 **Use CadQuery version 2.4.0** (Ensure your script runs with this version). </br>
+🔹 **Document your code whenever possible, as we will generate requests using AI.**</br>
+🔹 **Name your script file based on the object it generates.** (e.g., gear.py, hex_nut.py, custom_bracket.py).
 
 1. **Fork this repo**  
 2. **Add your script** inside the `examples/` folder  
-3. **Make sure your script runs without errors**  
-4. **Commit and push** your changes  
-5. **Open a Pull Request**  
+3. **Make sure your script runs without errors**
+4. **Name the file descriptively** (e.g., cylinder_mount.py instead of script1.py).
+5. **Commit and push** your changes  
+6. **Open a Pull Request**  
 
 That's it! 🚀  
 
